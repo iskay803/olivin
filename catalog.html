@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>catalog</title>
+    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="plugin/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugin/jquery-3.6.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <section>
+        <div class="menu-top">
+            <div class="container">
+                <div class="menu-wrapper">
+                    <div class="img-logo">
+                        <img src="icons/logo.PNG" class="img-fluid">
+                    </div>
+                    <div class="lang-block">EN</div>
+                    <div class="nav-list d-none d-lg-block">
+                        <a href="#" class="menu-item">бренды</a>
+                        <a href="#" class="menu-item">новости</a>
+                        <a href="#" class="menu-item">нанесение логотипа</a>
+                        <a href="#" class="menu-item">оплата и доставка</a>
+                        <a href="#" class="menu-item">о компании</a>
+                    </div>
+                    <div class="tel-block d-none d-lg-block">
+                        <a href="#">+7 888 888 88 88</a>
+                    </div>
+                    <div class="burger-btn d-lg-none">
+                        <img src="icons/menu.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="mobile-menu">
+                        <div class="mobile-menu__header">
+                            <div class="close-btn">
+                                <img src="icons/close.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="mobile-menu__nav">
+                            <a href="#" class="menu-item">бренды</a>
+                            <a href="#" class="menu-item">новости</a>
+                            <a href="#" class="menu-item">нанесение логотипа</a>
+                            <a href="#" class="menu-item">оплата и доставка</a>
+                            <a href="#" class="menu-item">о компании</a>
+                        </div>
+                        <div class="tel-block">
+                            <a href="#">+7 888 888 88 88</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="menu-bottom">
+            <div class="container">
+                <div class="under-menu">
+                    <div class="menu-catalog-btn">
+                        Каталог
+                    </div>
+                    <div class="search-block">
+                        <form>
+                            <input type="text" placeholder="Поиск" class="search-area">
+                            <button class="search-btn"></button>
+                        </form>
+                    </div>
+                    <div class="users-block">
+                        <a href="#" class="user-item account">Войти</a>
+                        <a href="#" class="user-item fav">Избранное</a>
+                        <a href="#" class="user-item bag">Корзина</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+    <section>
+        <div class="container">
+            <div class="catalog-wrapper">
+                <div class="catalog-category">
+                    <div class="category-item">
+                        <div class="category-title">Одежда</div>
+                        <div class="category-major">Футболки</div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-title">Цена, тенге</div>
+                        <div class="d-flex">
+                            <div class="catalog-price">
+                                <input type="text" placeholder="3000" class="category-price">
+                                <div class="category-price-label">от</div>
+                            </div>
+                            <div class="catalog-price ms-3">
+                                <input type="text" placeholder="16000" class="category-price">
+                                <div class="category-price-label">до</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-title">Размер</div>
+                        <div class="category-check-list">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="size-40">
+                                <label class="form-check-label" for="size-40">
+                                    40 <span class="size-lot">(12)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="size-42">
+                                <label class="form-check-label" for="size-42">
+                                    42 <span class="size-lot">(32)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="size-44">
+                                <label class="form-check-label" for="size-44">
+                                    44 <span class="size-lot">(15)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="size-46">
+                                <label class="form-check-label" for="size-46">
+                                    46 <span class="size-lot">(34)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="link-more-block">
+                            <a href="#" class="link-more">Показать еще</a>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-title">Цвет</div>
+                        <div>
+                            <div class="form-check category-color">
+                                <input class="form-check-input" type="checkbox" value="" id="color-white">
+                                <label class="form-check-label check-color" for="color-white">
+                                    <span style="background: #F5f5f7;"></span>
+                                </label>
+                            </div>
+                            <div class="form-check category-color">
+                                <input class="form-check-input" type="checkbox" value="" id="color-red">
+                                <label class="form-check-label check-color" for="color-red">
+                                    <span style="background: #eb5757;"></span>
+                                </label>
+                            </div>
+                            <div class="form-check category-color">
+                                <input class="form-check-input" type="checkbox" value="" id="color-yellow">
+                                <label class="form-check-label check-color" for="color-yellow">
+                                    <span style="background: #f2c94d;"></span>
+                                </label>
+                            </div>
+                            <div class="form-check category-color">
+                                <input class="form-check-input" type="checkbox" value="" id="color-green">
+                                <label class="form-check-label check-color" for="color-green">
+                                    <span style="background: #219652;"></span>
+                                </label>
+                            </div>
+                            <div class="form-check category-color">
+                                <input class="form-check-input" type="checkbox" value="" id="color-blue">
+                                <label class="form-check-label check-color" for="color-blue">
+                                    <span style="background: #56ccf2;"></span>
+                                </label>
+                            </div>
+                            <div class="form-check category-color">
+                                <input class="form-check-input" type="checkbox" value="" id="color-purple">
+                                <label class="form-check-label check-color" for="color-purple">
+                                    <span style="background: #bb6bda;"></span>
+                                </label>
+                            </div>
+                            <div class="form-check category-color">
+                                <input class="form-check-input" type="checkbox" value="" id="color-dark-grey">
+                                <label class="form-check-label check-color" for="color-dark-grey">
+                                    <span style="background: #4f4f4f;"></span>
+                                </label>
+                            </div>
+                            <div class="form-check category-color">
+                                <input class="form-check-input" type="checkbox" value="" id="color-ultramarine">
+                                <label class="form-check-label check-color" for="color-ultramarine">
+                                    <span style="background: #2c9cdb;"></span>
+                                </label>
+                            </div>
+                            <div class="form-check category-color">
+                                <input class="form-check-input" type="checkbox" value="" id="color-black">
+                                <label class="form-check-label check-color" for="color-black">
+                                    <span style="background: #000000;"></span>
+                                </label>
+                            </div>
+                            <div class="form-check category-color">
+                                <input class="form-check-input" type="checkbox" value="" id="color-grey">
+                                <label class="form-check-label check-color" for="color-grey">
+                                    <span style="background: #828282;"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="link-more-block">
+                            <a href="#" class="link-more">Показать еще</a>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-title">Вид нанесения</div>
+                        <div class="category-check-list">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="type-embroidery">
+                                <label class="form-check-label" for="type-embroidery">
+                                    Вышивка <span class="size-lot">(12)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="type-laser">
+                                <label class="form-check-label" for="type-laser">
+                                    Лазерная гравировка <span class="size-lot">(32)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="type-ink">
+                                <label class="form-check-label" for="type-ink">
+                                    Полноцвет водными чернилами <span class="size-lot">(15)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="type-silk">
+                                <label class="form-check-label" for="type-silk">
+                                    Шелкография <span class="size-lot">(34)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="type-flex">
+                                <label class="form-check-label" for="type-flex">
+                                    Флекс <span class="size-lot">(34)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="link-more-block">
+                            <a href="#" class="link-more">Показать еще</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-basic">
+                    <div class="catalog-basic__title">
+                        <h3 class="title-3">
+                            Футболки
+                        </h3>
+                        <span class="amount">123</span>
+                    </div>
+                    <div class="catalog-sort">
+                        <div class="me-3 mt-3">Сортировать</div>
+                        <a href="#" class="sort-btn active">Популярности</a>
+                        <a href="#" class="sort-btn">Новизне</a>
+                        <a href="#" class="sort-btn arrow">Цене оптом</a>
+                        <a href="#" class="sort-btn arrow">Цене за единицу</a>
+                    </div>
+                    <div class="catalog-result">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-xl-4">
+                                <a href="#" class="product-card ">
+                                    <div class="product-img">
+                                        <img src="img/card-1.png" class="img-fluid">
+                                    </div>
+                                    <div class="product-title">Бутылка для спорта ОБВЕТ синяя</div>
+                                    <div class="product-description">
+                                        <div>
+                                            Артикул: <span>1596</span>
+                                        </div>
+                                        <div>
+                                            В наличии: <span>418</span> шт.
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        1500<span class="value">,00₸</span>
+                                    </div>
+                                    <div class="product-description mt-1">
+                                        при тираже <span class="amount">125 шт.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4">
+                                <a href="#" class="product-card">
+                                    <div class="product-img">
+                                        <img src="img/card-2.png" class="img-fluid">
+                                    </div>
+                                    <div class="product-title">Бейсболка ИпИ Ргото</div>
+                                    <div class="product-description">
+                                        <div>
+                                            Артикул: <span>1596</span>
+                                        </div>
+                                        <div>
+                                            В наличии: <span>418</span> шт.
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        645<span class="value">,00₸</span>
+                                    </div>
+                                    <div class="product-description mt-1">
+                                        при тираже <span class="amount">25 шт.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4">
+                                <a href="#" class="product-card">
+                                    <div class="product-img">
+                                        <img src="img/card-3.png" class="img-fluid">
+                                    </div>
+                                    <div class="product-title">Флешка Сиде, 16 Гб</div>
+                                    <div class="product-description">
+                                        <div>
+                                            Артикул: <span>1596</span>
+                                        </div>
+                                        <div>
+                                            В наличии: <span>418</span> шт.
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        4152<span class="value">,00₸</span>
+                                    </div>
+                                    <div class="product-description mt-1">
+                                        при тираже <span class="amount">30 шт.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4">
+                                <a href="#" class="product-card">
+                                    <div class="product-img">
+                                        <img src="img/card-4.png" class="img-fluid">
+                                    </div>
+                                    <div class="product-title">Блокнот «РнезНу» с ручкой</div>
+                                    <div class="product-description">
+                                        <div>
+                                            Артикул: <span>1596</span>
+                                        </div>
+                                        <div>
+                                            В наличии: <span>418</span> шт.
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        768<span class="value">,00₸</span>
+                                    </div>
+                                    <div class="product-description mt-1">
+                                        при тираже <span class="amount">125 шт.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4">
+                                <a href="#" class="product-card">
+                                    <div class="product-img">
+                                        <img src="img/card-1.png" class="img-fluid">
+                                    </div>
+                                    <div class="product-title">Бутылка для спорта ОБВЕТ синяя</div>
+                                    <div class="product-description">
+                                        <div>
+                                            Артикул: <span>1596</span>
+                                        </div>
+                                        <div>
+                                            В наличии: <span>418</span> шт.
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        1500<span class="value">,00₸</span>
+                                    </div>
+                                    <div class="product-description mt-1">
+                                        при тираже <span class="amount">125 шт.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4">
+                                <a href="#" class="product-card">
+                                    <div class="product-img">
+                                        <img src="img/card-2.png" class="img-fluid">
+                                    </div>
+                                    <div class="product-title">Бейсболка ИпИ Ргото</div>
+                                    <div class="product-description">
+                                        <div>
+                                            Артикул: <span>1596</span>
+                                        </div>
+                                        <div>
+                                            В наличии: <span>418</span> шт.
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        645<span class="value">,00₸</span>
+                                    </div>
+                                    <div class="product-description mt-1">
+                                        при тираже <span class="amount">25 шт.</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="img-logo">
+                        <img src="icons/logo.PNG" class="img-fluid">
+                    </div>
+                    <div class="footer-network">
+                        <a href="#">
+                            <img src="icons/instagram.png" class="img-fluid">
+                        </a>
+                        <a href="#">
+                            <img src="icons/telegram.png" class="img-fluid">
+                        </a>
+                        <a href="#">
+                            <img src="icons/facebook.png" class="img-fluid">
+                        </a>
+                        <a href="#">
+                            <img src="icons/twitter.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="d-none d-sm-block">ⓒ2021, Olivin.kz</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mt-4 mt-sm-0">
+                    <div class="footer-title">
+                        Информация
+                    </div>
+                    <a href="#" class="footer-link">Бренды</a>
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Нанесение логотипа</a>
+                    <a href="#" class="footer-link">Доставка</a>
+                    <a href="#" class="footer-link">О компании</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mt-5 mt-md-0">
+                    <div class="footer-title">
+                        Сервис
+                    </div>
+                    <a href="#" class="footer-link">Доставка и оплата</a>
+                    <a href="#" class="footer-link">Возврат товара</a>
+                    <a href="#" class="footer-link">Помощь</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mt-5 mt-md-0">
+                    <div class="footer-title">
+                        Контакты
+                    </div>
+                    <a href="#" class="footer-link">+7 888 888 88 88</a>
+                    <a href="#" class="footer-link">Info@olivin.kz</a>
+                </div>
+                <div class="mt-5 d-sm-none">ⓒ2021, Olivin.kz</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="overlay"></div>
+</body>
+</html>
