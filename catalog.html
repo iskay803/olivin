@@ -70,7 +70,7 @@
                         </form>
                     </div>
                     <div class="users-block">
-                        <a href="#" class="user-item account">Войти</a>
+                        <a href="#" class="user-item account" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</a>
                         <a href="#" class="user-item fav">Избранное</a>
                         <a href="#" class="user-item bag">Корзина</a>
                     </div>
@@ -449,6 +449,53 @@
         </div>
     </div>
 </footer>
+<div class="modal fade modal-auth" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Авторизация</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <input type="text" class="form-control" id="authFormLogin" placeholder="Логин">
+                    <input type="text" class="form-control" id="authFormPassword" placeholder="Пароль">
+                    <a href="#" class="auth-link mt-3">Забыли пароль?</a>
+                    <div class="auth-option">
+                        <a href="#" class="btn btn-secondary btn-auth success">Войти</a>
+                        <a href="#" class="btn btn-secondary btn-auth" data-bs-toggle="modal" data-bs-target="#registerModal">Регистрация</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-auth" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Регистрация</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <input type="text" class="form-control" placeholder="Мобильный номер">
+                    <input type="text" class="form-control" placeholder="Имя">
+                    <input type="text" class="form-control" placeholder="Фамилия">
+                    <input type="text" class="form-control" placeholder="Логин">
+                    <input type="text" class="form-control"  placeholder="Пароль">
+                    <input type="text" class="form-control" placeholder="Поддтвердите пароль">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <div class="auth-option">
+                        <a href="#" class="btn btn-secondary btn-auth d-none d-sm-flex">Отмена</a>
+                        <a href="#" class="btn btn-secondary btn-auth success">Регистрация</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="overlay"></div>
 </body>
 </html>

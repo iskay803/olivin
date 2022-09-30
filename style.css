@@ -687,6 +687,84 @@ footer {
     z-index: 2;
 }
 
+.modal-auth .modal-header {
+    background: #9dc202;
+}
+
+.modal-auth .modal-title {
+    margin: 0 auto;
+    font-size: 32px;
+    color: #4c4f57;
+}
+
+.modal-auth .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-auth .modal-body {
+    padding: 40px 70px;
+}
+
+.modal-auth .form-control {
+    margin-top: 20px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #F5f5f7;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.modal-auth .form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid #9dc202;
+}
+
+.modal-auth .btn-auth {
+    margin: 50px 0 0;
+}
+
+.btn-auth {
+    color: #4c4f57;
+    font-size: 20px;
+    width: 160px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.btn-auth.success {
+    background: #9dc202;
+}
+
+.auth-option {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.auth-link {
+    display: block;
+    color: #4c4f57;
+    font-size: 14px;
+}
+
+.auth-link:hover {
+    color: #9dc202;
+}
+
 
 
 /* ___________ CATALOG PAGE ___________*/
@@ -1365,6 +1443,14 @@ footer {
     .fact-item {
         padding: 0 10px;
         font-size: 16px;
+    }
+
+    .modal-auth .modal-body {
+        padding: 40px 20px;
+    }
+
+    .modal-auth .btn-auth {
+        margin: 20px 0 0;
     }
 }
 
