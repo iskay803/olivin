@@ -7,6 +7,37 @@ $(function () {
         $('.mobile-menu, .overlay').fadeOut();
     });
 
+    $('.menu-catalog-btn').click(function () {
+        $('.catalog-popup>.catalog-list').fadeIn();
+    });
+
+    $('body').click(function (e) {
+        const element = $(e.target);
+        if (element.parents('.catalog-list').length !== 0) {
+            return;
+        }
+        if (element.is('.menu-catalog-btn')) {
+            return;
+        }
+        $('.catalog-list').fadeOut();
+        $('.popup-item .category-label').removeClass('active')
+    });
+
+    $('.popup-item .category-label').click(function () {
+        var willShow = false;
+        if(!$(this).is('.active')) {
+            willShow = true;
+        }
+        const parentList = $(this).parents('.catalog-list:first');
+        parentList.find('.popup-item .category-label').removeClass('active');
+        parentList.find('.catalog-list').fadeOut();
+
+        if(willShow) {
+            $(this).siblings('.catalog-list').fadeIn();
+            $(this).addClass('active');
+        }
+    })
+
     new Swiper(".promo-swiper", {
         pagination: {
             el: ".swiper-pagination",

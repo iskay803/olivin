@@ -169,6 +169,77 @@ a:hover {
     background-size: contain;
 }
 
+.catalog-popup {
+    position: absolute;
+    top: 81px;
+    left: 0;
+    z-index: 3;
+}
+
+.catalog-list {
+    display: none;
+    min-width: 300px;
+    background: #393d46;
+    color: #ffffff;
+    border: 1px solid #9dc202;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-list.submenu {
+    position: absolute;
+    left: 100%;
+    top: -1px;
+    background: #4d4d55;
+}
+
+.catalog-list.submenu .popup-item {
+    border: none;
+}
+
+.popup-item {
+    display: block;
+    border-bottom: 1px solid #9dc202;
+    padding: 20px;
+    transition: .3s;
+}
+
+.popup-item:hover {
+    background: #2b2e35;
+}
+
+.popup-item.parent {
+    position: relative;
+}
+
+.popup-item .category-label {
+    position: absolute;
+    content: '';
+    top: 18px;
+    right: 12px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    background: url("icons/plus.png") no-repeat;
+    background-size: contain;
+    transition: .3s;
+}
+
+.popup-item .category-label.active {
+    background: url("icons/minus.png") no-repeat;
+    background-size: contain;
+}
+
+.popup-link {
+    font-size: 18px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.popup-link:hover {
+    color: #9dc202;
+}
+
 .search-block {
     position: relative;
     flex-grow: 1;
@@ -1153,6 +1224,10 @@ footer {
     .brand-item {
         width: 180px;
     }
+
+    .catalog-list {
+        min-width: 280px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1198,6 +1273,24 @@ footer {
     .inst-item {
         width: 33%;
         height: auto;
+    }
+
+    .catalog-list {
+        min-width: 235px;
+    }
+
+    .popup-item {
+        padding: 12px;
+    }
+
+    .popup-link {
+        font-size: 16px;
+    }
+
+    .popup-item .category-label {
+        top: 12px;
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -1287,6 +1380,28 @@ footer {
 
     .fact-desc {
         margin-bottom: 30px;
+    }
+
+    .catalog-list.submenu {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .catalog-list.submenu {
+        border: none;
+        background: #2b2e35;
+    }
+
+    .catalog-list.submenu .popup-item {
+        padding: 12px 0 12px 12px;
+    }
+
+    .catalog-list.submenu .popup-item .category-label {
+        width: 14px;
+        height: 14px;
+        top: 15px;
+        right: 4px;
     }
 
 }
